@@ -61,15 +61,16 @@
     background: $Primary100;
     display: flex;
     flex-direction: column;
-    gap:32px;
+    gap: 32px;
     font-size: 20px;
     padding: 80px;
-    a{
+    a {
       display: inline-block;
       color: $Primary600;
       padding-bottom: 4px;
       border-bottom: 1px solid $Primary100;
-      &:hover,&.active {
+      &:hover,
+      &.active {
         border-bottom: 1px solid $Primary900;
         color: $Primary800;
       }
@@ -125,7 +126,8 @@
         color: $Primary600;
         padding-bottom: 4px;
         border-bottom: 1px solid $Primary100;
-        &:hover,&.active {
+        &:hover,
+        &.active {
           border-bottom: 1px solid $Primary900;
           color: $Primary800;
         }

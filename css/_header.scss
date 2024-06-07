@@ -23,54 +23,55 @@ header {
     a {
       color: $Primary900;
     }
-    a:hover,.mark {
+    a:hover,
+    .mark {
       font-weight: 600;
       position: relative;
-      &::before{
+      &::before {
         content: "";
         display: block;
         position: absolute;
         width: 8px;
         height: 8px;
         left: -8px;
-        top:-4px;
+        top: -4px;
         border-top: 1px solid $Primary500;
         border-left: 1px solid $Primary500;
       }
-      &::after{
+      &::after {
         content: "";
         display: block;
         position: absolute;
         width: 8px;
         height: 8px;
         right: -8px;
-        top:-4px;
+        top: -4px;
         border-top: 1px solid $Primary500;
         border-right: 1px solid $Primary500;
       }
-      span{
-        &::before{
-            content: "";
-            display: block;
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            left: -8px;
-            bottom:-4px;
-            border-bottom: 1px solid $Primary500;
-            border-left: 1px solid $Primary500;
-          }
-          &::after{
-            content: "";
-            display: block;
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            right: -8px;
-            bottom:-4px;
-            border-bottom: 1px solid $Primary500;
-            border-right: 1px solid $Primary500;
-          }
+      span {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          left: -8px;
+          bottom: -4px;
+          border-bottom: 1px solid $Primary500;
+          border-left: 1px solid $Primary500;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          right: -8px;
+          bottom: -4px;
+          border-bottom: 1px solid $Primary500;
+          border-right: 1px solid $Primary500;
+        }
       }
     }
   }
@@ -94,17 +95,17 @@ header {
       padding: 8px 12px;
     }
     .nav-btn {
-        display:block;
-        border: 0;
-        background-color: transparent;
-        cursor: pointer;
-        span {
-          font-size: 40px;
-          &.active{
-            display: none;
-          }
+      display: block;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      span {
+        font-size: 40px;
+        &.active {
+          display: none;
         }
       }
+    }
     .nav-list {
       display: none;
     }
@@ -118,18 +119,21 @@ header {
       background: $Primary50;
       width: calc(100vw - 24px);
       text-align: center;
-      a{
+      a {
         display: block;
         padding: 16px 0;
         font-weight: 400;
-        &:hover{
-            background: $Primary200;
-            font-weight: 600;
+        &:hover {
+          background: $Primary200;
+          font-weight: 600;
         }
       }
-      a:hover,.mark {
-        &::before,&::after,span{
-            display: none;
+      a:hover,
+      .mark {
+        &::before,
+        &::after,
+        span {
+          display: none;
         }
       }
     }

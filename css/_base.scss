@@ -56,13 +56,13 @@ section {
       display: inline-block;
       width: 100px;
       height: 6px;
-      background: url(/images/title-deco-left-lg.png);
+      background: url(../images/title-deco-left-lg.png);
     }
     .title-deco-right {
       display: inline-block;
       width: 100px;
       height: 6px;
-      background: url(/images/title-deco-right-lg.png);
+      background: url(../images/title-deco-right-lg.png);
     }
   }
   &-subtitle{
@@ -81,11 +81,11 @@ section {
     font-size: 24px;
     .title-deco-left {
       width: 56px;
-      background: url(/images/title-deco-left-sm.png);
+      background: url(../images/title-deco-left-sm.png);
     }
     .title-deco-right {
       width: 56px;
-      background: url(/images/title-deco-right-sm.png);
+      background: url(../images/title-deco-right-sm.png);
     }
   }
   .section-subtitle{
