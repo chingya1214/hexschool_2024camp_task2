@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// 全域
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+// section
+section {
+  padding: 120px 0;
+}
+@media (max-width: $breakpoints-lg) {
+  section {
+    padding: 80px 28px;
+  }
+}
+
+@media (max-width: $breakpoints-md) {
+  section {
+    padding: 80px 12px;
+  }
+}
+
+// section-header
+.section {
+  &-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.12em;
+    color: $Primary700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    .title-deco-left {
+      display: inline-block;
+      width: 100px;
+      height: 6px;
+      background: url(/images/title-deco-left-lg.png);
+    }
+    .title-deco-right {
+      display: inline-block;
+      width: 100px;
+      height: 6px;
+      background: url(/images/title-deco-right-lg.png);
+    }
+  }
+  &-subtitle{
+    color: $Primary500;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: $breakpoints-lg) {
+  .section-header {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .section-title {
+    font-size: 24px;
+    .title-deco-left {
+      width: 56px;
+      background: url(/images/title-deco-left-sm.png);
+    }
+    .title-deco-right {
+      width: 56px;
+      background: url(/images/title-deco-right-sm.png);
+    }
+  }
+  .section-subtitle{
+    margin-top: 16px;
+  }
+}
+
+.font-primary-700 {
+  color: $Primary700 !important;
+}
+.font-primary-600 {
+  color: $Primary600 !important;
+}
+.font-primary-500 {
+  color: $Primary500 !important;
+}
+.font-primary-50 {
+  color: $Primary50 !important;
+}

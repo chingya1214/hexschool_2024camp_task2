@@ -1,0 +1,138 @@
+//blog
+.blog {
+  &-container {
+    max-width: $container-max-width-llg;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 75%;
+  }
+  &-item {
+    display: flex;
+    gap: 16px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+    img {
+      width: 306px;
+      min-height: 220px;
+      border-radius: 8px;
+      border: 1px solid $Primary100;
+      object-fit: cover;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .content-top {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .tag {
+          display: inline-block;
+          background: $Primary200;
+          border-radius: 16px;
+          padding: 4px 12px;
+        }
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  &-menu {
+    max-width: 306px;
+    width: 25%;
+    background: $Primary100;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    font-size: 20px;
+    padding: 80px;
+    a{
+      display: inline-block;
+      color: $Primary600;
+      padding-bottom: 4px;
+      border-bottom: 1px solid $Primary100;
+      &:hover,&.active {
+        border-bottom: 1px solid $Primary900;
+        color: $Primary800;
+      }
+    }
+  }
+  &-menu-sm {
+    background: $Primary100;
+    display: none;
+  }
+}
+@media (max-width: $breakpoints-lg) {
+  .blog {
+    &-menu {
+      padding: 40px;
+    }
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .blog {
+    padding: 80px 34.5px;
+    &-container {
+      flex-direction: column-reverse;
+      gap: 40x;
+    }
+    &-list {
+      width: 100%;
+      gap: 40px;
+    }
+    &-item {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      &-content {
+        .content-top {
+          justify-content: space-between;
+        }
+        p {
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+    &-menu {
+      display: none;
+    }
+    &-menu-sm {
+      display: flex;
+      gap: 32px;
+      padding: 20px 12px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      a {
+        color: $Primary600;
+        padding-bottom: 4px;
+        border-bottom: 1px solid $Primary100;
+        &:hover,&.active {
+          border-bottom: 1px solid $Primary900;
+          color: $Primary800;
+        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

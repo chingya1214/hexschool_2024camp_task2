@@ -1,0 +1,278 @@
+// service
+.service {
+  &-container {
+    max-width: $container-max-width-llg;
+    margin: 0 auto;
+  }
+  &-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  &-item {
+    width: 306px;
+    height: 306px;
+    background: linear-gradient(315deg, #1e1e1e 0%, #1e1e1e 49.97%, #000000 50%);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    color: $Primary50;
+    transition: all 0.2s ease-out;
+    p {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    &:hover {
+      filter: invert(80%);
+    }
+  }
+}
+
+@media (max-width: $breakpoints-lg) {
+  .service {
+    padding: 40px 30px 80px 30px;
+    &-cards {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .service {
+    padding: 40px 34.5px 80px 34.5px;
+    &-cards {
+      flex-direction: column;
+    }
+  }
+}
+
+// process
+.process {
+  background: linear-gradient(315deg, #1e1e1e 0%, #1e1e1e 49.97%, #000000 50%);
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .step {
+    width: 655px;
+    display: flex;
+    align-items: center;
+    padding: 24px 12px 24px 32px;
+    background: $Primary700;
+    border: 1px solid $Primary500;
+    border-radius: 4px;
+    gap: 32px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      background: $Primary600;
+    }
+    &-arrow {
+      font-size: 32px;
+      color: $Primary600;
+    }
+    &-number {
+      font-family: "Tourney", sans-serif;
+      font-size: 72px;
+      color: $Primary500;
+    }
+    &-content {
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: $Primary50;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 20px;
+        color: $Primary300;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoints-md) {
+  .process {
+    .step {
+      width: 351px;
+      flex-direction: column;
+      padding: 24px 24px 48px 24px;
+      gap: 8px;
+      &-number {
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//price
+.price {
+  padding-left: 27px;
+  padding-right: 27px;
+  &-container {
+    max-width: $container-max-width-llg;
+    margin: 0 auto;
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  &-item {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: $Primary100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 36px 32px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    img {
+      width: 56px;
+    }
+    h5 {
+      font-size: 28px;
+      font-weight: 600;
+      color: $Primary600;
+    }
+    .line {
+      width: 41px;
+      border-bottom: 1px solid $Primary400;
+    }
+    p {
+      font-size: 32px;
+      font-weight: 700;
+      color: $Primary800;
+    }
+    span {
+      display: inline-block;
+      font-size: 16px;
+      color: $Primary600;
+      margin-left: 8px;
+    }
+    &:last-child {
+      .line {
+        width: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoints-lg) {
+  .price {
+    &-cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-item {
+      width: 60%;
+    }
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .price {
+    &-cards {
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+      padding: 32px 24px;
+      img {
+        width: 40px;
+      }
+      h5,
+      p {
+        font-size: 20px;
+      }
+      .line {
+        width: 28px;
+      }
+      &:last-child {
+        .line {
+          width: 28px;
+        }
+      }
+    }
+  }
+}
+
+// sample
+.sample {
+  background: $Primary100;
+  &-container {
+    max-width: $container-max-width-llg;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 80px 24px;
+    }
+  }
+}
+
+@media (max-width: $breakpoints-md) {
+  .sample {
+    ul {
+      gap: 48px;
+    }
+  }
+}
+
+//QA
+.QA {
+  &-list {
+    max-width: 1076px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto;
+  }
+  &-item {
+    width: calc(50% - 24px);
+    padding: 24px;
+    border: 1px solid $Primary300;
+    border-radius: 8px;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: $Primary600;
+    }
+    p {
+      font-size: 20px;
+      color: $Primary700;
+    }
+  }
+}
+
+@media (max-width: $breakpoints-md) {
+  .QA {
+    padding-left: 20px;
+    padding-right: 20px;
+    &-item {
+      width: 100%;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

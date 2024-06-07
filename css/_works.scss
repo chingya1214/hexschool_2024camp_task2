@@ -1,0 +1,207 @@
+// banner
+.banner {
+  background: $Primary100;
+  padding: 80px 40px;
+  text-align: center;
+  &-heading {
+    max-width: 670px;
+    padding: 59px 71px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    position: relative;
+    .title {
+      position: relative;
+      color: $Primary800;
+      font-size: 24px;
+      line-height: 28.8px;
+      z-index: 1;
+      h1 {
+        display: inline;
+        position: relative;
+      }
+      .mark {
+        position: absolute;
+        bottom: 0;
+        right: -14px;
+        z-index: -1;
+      }
+    }
+    .quote {
+      position: absolute;
+      &-1 {
+        top: 0;
+        left: 0;
+      }
+      &-2 {
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  &-content {
+    max-width: 636px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      max-width: 47%;
+      p {
+        color: $Primary700;
+        line-height: 24px;
+      }
+      .subtitle {
+        color: $Primary600;
+      }
+      .subtitle-line {
+        display: block;
+        width: 24px;
+        border-bottom: 2px solid $Primary400;
+        margin: 4px auto 8px auto;
+      }
+    }
+  }
+  .d-none-md {
+    display: block;
+  }
+  .mb-16 {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .banner {
+    padding: 40px 24px 60px 24px;
+    &-heading {
+      max-width: 300px;
+      padding: 0;
+      margin-bottom: 40px;
+      .title {
+        font-size: 20px;
+        line-height: 30px;
+        .mark {
+          max-width: 108px;
+          right: -5px;
+        }
+        &.p-20-md {
+          padding: 0 20px;
+        }
+      }
+      .quote {
+        position: static;
+      }
+    }
+    &-content {
+      max-width: 235px;
+      flex-wrap: wrap;
+      &-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .d-none-md {
+      display: none;
+    }
+  }
+}
+
+// works
+.works {
+  padding: 120px 0;
+  &-container {
+    max-width: $container-max-width-llg;
+    margin: 0 auto 72px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 80px 24px;
+  }
+  &-item {
+    width: calc(50% - 24px);
+    img {
+      width: 100%;
+      border-radius: 8px;
+      transition: all 0.2s ease-out;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+  &-item-content {
+    padding: 16px;
+    h2 {
+      color: $Primary700;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    p {
+      color: $Primary500;
+      margin-bottom: 24px;
+    }
+    .tags {
+      color: $Primary700;
+      display: flex;
+      gap: 16px;
+      &-item {
+        background: $Primary200;
+        padding: 4px 12px;
+        border-radius: 16px;
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    li a {
+      display: inline-block;
+      background: $Primary50;
+      border-radius: 4px;
+      padding: 5px 13px;
+      color: $Primary700;
+      &:hover {
+        background: $Primary600;
+        color: $Primary50;
+      }
+      &.active {
+        background: $Primary800;
+        color: $Primary50;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoints-lg) {
+  .works {
+    padding: 120px 30px;
+    &-container {
+      gap: 48px 12px;
+    }
+    &-item {
+      width: calc(50% - 12px);
+    }
+  }
+}
+@media (max-width: $breakpoints-md) {
+  .works {
+    padding: 80px 12px;
+    &-container {
+      margin: 0 auto 48px auto;
+      gap: 48px 0;
+      justify-content: center;
+    }
+    &-item {
+      width: 100%;
+    }
+    &-item-content {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      .tags {
+        gap: 8px;
+      }
+    }
+  }
+}
