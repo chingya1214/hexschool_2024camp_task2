@@ -1,0 +1,2 @@
+# hexschool_2024camp_task2
+ hexschool_2024camp_task2
