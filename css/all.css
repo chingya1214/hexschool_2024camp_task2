@@ -131,11 +131,11 @@ section {
   }
   .section-title .title-deco-left {
     width: 56px;
-    background: url(../images/title-deco-left-sm.png);
+    background: url(./images/title-deco-left-sm.png);
   }
   .section-title .title-deco-right {
     width: 56px;
-    background: url(../images/title-deco-right-sm.png);
+    background: url(./images/title-deco-right-sm.png);
   }
   .section-subtitle {
     margin-top: 16px;
@@ -296,7 +296,7 @@ header .nav-list.active .mark span {
   }
 }
 footer {
-  background-image: url(../images/footer-bg-lg.png);
+  background-image: url(./images/footer-bg-lg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
@@ -347,7 +347,7 @@ footer .footer-container .link-item:hover, footer .footer-container .link-item.a
 }
 @media (max-width: 768px) {
   footer {
-    background-image: url(../images/footer-bg-sm.png);
+    background-image: url(./images/footer-bg-sm.png);
     padding: 40px 34px;
   }
   footer .footer-container {
@@ -364,7 +364,7 @@ footer .footer-container .link-item:hover, footer .footer-container .link-item.a
 }
 .homepage-service {
   text-align: center;
-  background: url(../images/homepage-services-bg.png);
+  background: url(./images/homepage-services-bg.png);
 }
 .homepage-service .btn-top-content {
   font-size: 28px;
